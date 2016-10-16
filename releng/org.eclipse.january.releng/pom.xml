@@ -251,6 +251,10 @@
 		<profile>
 			<id>sign</id>
 
+			<properties>
+				<!-- signed/official builds have 'v' prefix, to distinguish them from builds locally built -->
+				<build-prefix>'v'</build-prefix>
+			</properties>
 			<build>
 				<plugins>
 					<!-- enable jar signing -->
