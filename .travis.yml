@@ -1,4 +1,7 @@
-sudo: false # use containers
+sudo: required
+dist: trusty
+group: edge
+jdk: oraclejdk9
 
 language: java
 
@@ -8,11 +11,6 @@ cache:
   - .autoconf
   - $HOME/.m2
   
-services:
-  - docker
-
-jdk:
- - oraclejdk7
 
 # don't do anything on install, just let maven install the dependencies in the script
 # Also see https://github.com/eclipse/january/issues/109
