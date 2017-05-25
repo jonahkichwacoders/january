@@ -143,6 +143,7 @@ public abstract class LazyDatasetBase implements ILazyDataset, Serializable {
 	/**
 	 * This method allows anything that dirties the dataset to clear various metadata values
 	 * so that the other methods can work correctly.
+	 * @since 2.1
 	 */
 	public void setDirty() {
 		dirty = true;
